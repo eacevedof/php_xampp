@@ -1,0 +1,9 @@
+#ignore everything
+/*
+/*/
+!.gitignore
+!README.md
+
+# excluyo estas carpetas
+!/apache/
+!/php/
