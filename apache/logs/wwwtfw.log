@@ -1,7 +1,0 @@
-127.0.0.1 - - [11/Apr/2018:21:49:51 +0200] "GET / HTTP/1.1" 301 -
-127.0.0.1 - - [11/Apr/2018:21:49:52 +0200] "GET /en/ HTTP/1.1" 200 2705
-127.0.0.1 - - [11/Apr/2018:21:49:54 +0200] "GET /style/multipurpose/style-headers.css HTTP/1.1" 200 21504
-127.0.0.1 - - [11/Apr/2018:21:49:54 +0200] "GET /style/multipurpose/tfw-extra.css HTTP/1.1" 200 436
-127.0.0.1 - - [11/Apr/2018:21:49:54 +0200] "GET /style/multipurpose/style-colors.css HTTP/1.1" 200 171762
-127.0.0.1 - - [11/Apr/2018:21:49:54 +0200] "GET /style/multipurpose/style.css HTTP/1.1" 200 170448
-127.0.0.1 - - [11/Apr/2018:21:49:54 +0200] "GET /favicon.ico HTTP/1.1" 404 6450

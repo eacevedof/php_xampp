@@ -131,7 +131,7 @@ Apache ; désactivée par défaut depuis la version 2.3.14.</td></tr>
     processus du serveur qu'après la réception du premier octet (ou de
     l'ensemble de la requête si <code>httpready</code> est défini). Le
     délai configuré pour les en-têtes via la directive
-    <code>RequestReadTimeout</code> n'entre en ligne de compte qu'une fois
+    <code class="directive">RequestReadTimeout</code> n'entre en ligne de compte qu'une fois
     la socket reçue par le processus du serveur.</p>
 
     <p>Il existe deux méthodes pour spécifier le délai (pour l'en-tête
@@ -148,7 +148,7 @@ Apache ; désactivée par défaut depuis la version 2.3.14.</td></tr>
     corps de la requête. La valeur 0 signifie aucune limite.</p>
     </li>
 
-    <li><strong>Désactivation du module pour un serveur virtuel :</strong>:<br />
+    <li><strong>Désactivation du module pour un serveur virtuel</strong>:<br />
 
     <div class="example"><p><code>header=0 body=0</code></p></div>
 
@@ -206,7 +206,7 @@ var comments_identifier = 'http://httpd.apache.org/docs/2.4/mod/mod_reqtimeout.h
     }
 })(window, document);
 //--><!]]></script></div><div id="footer">
-<p class="apache">Copyright 2017 The Apache Software Foundation.<br />Autorisé sous <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+<p class="apache">Copyright 2018 The Apache Software Foundation.<br />Autorisé sous <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
 <p class="menu"><a href="../mod/">Modules</a> | <a href="../mod/directives.html">Directives</a> | <a href="http://wiki.apache.org/httpd/FAQ">FAQ</a> | <a href="../glossary.html">Glossaire</a> | <a href="../sitemap.html">Plan du site</a></p></div><script type="text/javascript"><!--//--><![CDATA[//><!--
 if (typeof(prettyPrint) !== 'undefined') {
     prettyPrint();

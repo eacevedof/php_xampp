@@ -77,7 +77,10 @@
 <li><img alt="" src="../images/down.gif" /> <a href="#httpprotocoloptions">HttpProtocolOptions</a></li>
 <li><img alt="" src="../images/down.gif" /> <a href="#if">&lt;If&gt;</a></li>
 <li><img alt="" src="../images/down.gif" /> <a href="#ifdefine">&lt;IfDefine&gt;</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#ifdirective">&lt;IfDirective&gt;</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#iffile">&lt;IfFile&gt;</a></li>
 <li><img alt="" src="../images/down.gif" /> <a href="#ifmodule">&lt;IfModule&gt;</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#ifsection">&lt;IfSection&gt;</a></li>
 <li><img alt="" src="../images/down.gif" /> <a href="#include">Include</a></li>
 <li><img alt="" src="../images/down.gif" /> <a href="#includeoptional">IncludeOptional</a></li>
 <li><img alt="" src="../images/down.gif" /> <a href="#keepalive">KeepAlive</a></li>
@@ -105,6 +108,7 @@
 <li><img alt="" src="../images/down.gif" /> <a href="#protocols">Protocols</a></li>
 <li><img alt="" src="../images/down.gif" /> <a href="#protocolshonororder">ProtocolsHonorOrder</a></li>
 <li><img alt="" src="../images/down.gif" /> <a href="#qualifyredirecturl">QualifyRedirectURL</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#regexdefaultoptions">RegexDefaultOptions</a></li>
 <li><img alt="" src="../images/down.gif" /> <a href="#registerhttpmethod">RegisterHttpMethod</a></li>
 <li><img alt="" src="../images/down.gif" /> <a href="#rlimitcpu">RLimitCPU</a></li>
 <li><img alt="" src="../images/down.gif" /> <a href="#rlimitmem">RLimitMEM</a></li>
@@ -1864,6 +1868,42 @@ if a test is true at startup</td></tr>
 
 </div>
 <div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="IfDirective" id="IfDirective">&lt;IfDirective&gt;</a> <a name="ifdirective" id="ifdirective">Directiva</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">Descripción:</a></th><td>Encloses directives that are processed conditional on the
+presence or absence of a specific directive</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">Sintaxis:</a></th><td><code>&lt;IfDirective [!]<var>directive-name</var>&gt; ...
+    &lt;/IfDirective&gt;</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">Contexto:</a></th><td>server config, virtual host, directorio, .htaccess</td></tr>
+<tr><th><a href="directive-dict.html#Override">Prevalece sobre:</a></th><td>All</td></tr>
+<tr><th><a href="directive-dict.html#Status">Estado:</a></th><td>Core</td></tr>
+<tr><th><a href="directive-dict.html#Module">Módulo:</a></th><td>core</td></tr>
+<tr><th><a href="directive-dict.html#Compatibility">Compatibilidad:</a></th><td>Available in 2.4.34 and later.</td></tr>
+</table><p>La Documentación para esta directiva 
+        	no ha sido traducida aún. Por favor use la versión en inglés 
+        	mientras tanto.
+            </p><h3>Consulte también</h3>
+<ul>
+<li><code class="directive"><a href="#ifsection">&lt;IfSection&gt;</a></code></li>
+</ul>
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="IfFile" id="IfFile">&lt;IfFile&gt;</a> <a name="iffile" id="iffile">Directiva</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">Descripción:</a></th><td>Encloses directives that will be processed only
+if file exists at startup</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">Sintaxis:</a></th><td><code>&lt;IfFile [!]<var>parameter-name</var>&gt; ...
+    &lt;/IfFile&gt;</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">Contexto:</a></th><td>server config, virtual host, directorio, .htaccess</td></tr>
+<tr><th><a href="directive-dict.html#Override">Prevalece sobre:</a></th><td>All</td></tr>
+<tr><th><a href="directive-dict.html#Status">Estado:</a></th><td>Core</td></tr>
+<tr><th><a href="directive-dict.html#Module">Módulo:</a></th><td>core</td></tr>
+<tr><th><a href="directive-dict.html#Compatibility">Compatibilidad:</a></th><td>Available in 2.4.34 and later.</td></tr>
+</table><p>La Documentación para esta directiva 
+        	no ha sido traducida aún. Por favor use la versión en inglés 
+        	mientras tanto.
+            </p></div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
 <div class="directive-section"><h2><a name="IfModule" id="IfModule">&lt;IfModule&gt;</a> <a name="ifmodule" id="ifmodule">Directiva</a></h2>
 <table class="directive">
 <tr><th><a href="directive-dict.html#Description">Descripción:</a></th><td>Encloses directives that are processed conditional on the
@@ -1915,6 +1955,26 @@ later.</td></tr>
     placed in <code class="directive">&lt;IfModule&gt;</code>
     sections.</div>
 
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="IfSection" id="IfSection">&lt;IfSection&gt;</a> <a name="ifsection" id="ifsection">Directiva</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">Descripción:</a></th><td>Encloses directives that are processed conditional on the
+presence or absence of a specific section directive</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">Sintaxis:</a></th><td><code>&lt;IfSection [!]<var>section-name</var>&gt; ...
+    &lt;/IfSection&gt;</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">Contexto:</a></th><td>server config, virtual host, directorio, .htaccess</td></tr>
+<tr><th><a href="directive-dict.html#Override">Prevalece sobre:</a></th><td>All</td></tr>
+<tr><th><a href="directive-dict.html#Status">Estado:</a></th><td>Core</td></tr>
+<tr><th><a href="directive-dict.html#Module">Módulo:</a></th><td>core</td></tr>
+<tr><th><a href="directive-dict.html#Compatibility">Compatibilidad:</a></th><td>Available in 2.4.34 and later.</td></tr>
+</table><p>La Documentación para esta directiva 
+        	no ha sido traducida aún. Por favor use la versión en inglés 
+        	mientras tanto.
+            </p><h3>Consulte también</h3>
+<ul>
+<li><code class="directive"><a href="#ifdirective">&lt;IfDirective&gt;</a></code></li>
+</ul>
 </div>
 <div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
 <div class="directive-section"><h2><a name="Include" id="Include">Include</a> <a name="include" id="include">Directiva</a></h2>
@@ -2020,7 +2080,8 @@ the server configuration files</td></tr>
 <tr><th><a href="directive-dict.html#Context">Contexto:</a></th><td>server config, virtual host, directorio</td></tr>
 <tr><th><a href="directive-dict.html#Status">Estado:</a></th><td>Core</td></tr>
 <tr><th><a href="directive-dict.html#Module">Módulo:</a></th><td>core</td></tr>
-<tr><th><a href="directive-dict.html#Compatibility">Compatibilidad:</a></th><td>Available in 2.3.6 and later</td></tr>
+<tr><th><a href="directive-dict.html#Compatibility">Compatibilidad:</a></th><td>Available in 2.3.6 and later. Not existent file paths without wildcards
+               do not cause SyntaxError after 2.4.30</td></tr>
 </table><p>La Documentación para esta directiva 
         	no ha sido traducida aún. Por favor use la versión en inglés 
         	mientras tanto.
@@ -3473,6 +3534,20 @@ as if 'QualifyRedirectURL ON' was configured.</td></tr>
         	mientras tanto.
             </p></div>
 <div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="RegexDefaultOptions" id="RegexDefaultOptions">RegexDefaultOptions</a> <a name="regexdefaultoptions" id="regexdefaultoptions">Directiva</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">Descripción:</a></th><td>Allow to configure global/default options for regexes</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">Sintaxis:</a></th><td><code>RegexDefaultOptions [none] [+|-]<var>option</var> [[+|-]<var>option</var>] ...</code></td></tr>
+<tr><th><a href="directive-dict.html#Default">Valor por defecto:</a></th><td><code>RegexDefaultOptions DOLLAR_ENDONLY</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">Contexto:</a></th><td>server config</td></tr>
+<tr><th><a href="directive-dict.html#Status">Estado:</a></th><td>Core</td></tr>
+<tr><th><a href="directive-dict.html#Module">Módulo:</a></th><td>core</td></tr>
+<tr><th><a href="directive-dict.html#Compatibility">Compatibilidad:</a></th><td>Only available from Apache 2.4.30 and later.</td></tr>
+</table><p>La Documentación para esta directiva 
+        	no ha sido traducida aún. Por favor use la versión en inglés 
+        	mientras tanto.
+            </p></div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
 <div class="directive-section"><h2><a name="RegisterHttpMethod" id="RegisterHttpMethod">RegisterHttpMethod</a> <a name="registerhttpmethod" id="registerhttpmethod">Directiva</a></h2>
 <table class="directive">
 <tr><th><a href="directive-dict.html#Description">Descripción:</a></th><td>Register non-standard HTTP methods</td></tr>
@@ -3480,10 +3555,16 @@ as if 'QualifyRedirectURL ON' was configured.</td></tr>
 <tr><th><a href="directive-dict.html#Context">Contexto:</a></th><td>server config</td></tr>
 <tr><th><a href="directive-dict.html#Status">Estado:</a></th><td>Core</td></tr>
 <tr><th><a href="directive-dict.html#Module">Módulo:</a></th><td>core</td></tr>
+<tr><th><a href="directive-dict.html#Compatibility">Compatibilidad:</a></th><td>Available in Apache HTTP Server 2.4.24 and later</td></tr>
 </table><p>La Documentación para esta directiva 
         	no ha sido traducida aún. Por favor use la versión en inglés 
         	mientras tanto.
-            </p></div>
+            </p><h3>Consulte también</h3>
+<ul>
+<li><code class="directive"><a href="#httpprotocoloptions">HTTPProtocolOptions</a></code></li>
+<li><code class="directive"><a href="../mod/mod_allowmethods.html#allowmethods">AllowMethods</a></code></li>
+</ul>
+</div>
 <div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
 <div class="directive-section"><h2><a name="RLimitCPU" id="RLimitCPU">RLimitCPU</a> <a name="rlimitcpu" id="rlimitcpu">Directiva</a></h2>
 <table class="directive">
@@ -4457,7 +4538,7 @@ var comments_identifier = 'http://httpd.apache.org/docs/2.4/mod/core.html';
     }
 })(window, document);
 //--><!]]></script></div><div id="footer">
-<p class="apache">Copyright 2017 The Apache Software Foundation.<br />Licencia bajo los términos de <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+<p class="apache">Copyright 2018 The Apache Software Foundation.<br />Licencia bajo los términos de <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
 <p class="menu"><a href="../mod/">Módulos</a> | <a href="../mod/directives.html">Directivas</a> | <a href="http://wiki.apache.org/httpd/FAQ">Preguntas Frecuentes</a> | <a href="../glossary.html">Glosario</a> | <a href="../sitemap.html">Mapa del sitio web</a></p></div><script type="text/javascript"><!--//--><![CDATA[//><!--
 if (typeof(prettyPrint) !== 'undefined') {
     prettyPrint();
