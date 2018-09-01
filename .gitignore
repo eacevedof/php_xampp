@@ -1,6 +1,8 @@
 #ignore everything
 /*
 /*/
+/apache/logs/*
+
 !.gitignore
 !README.md
 
